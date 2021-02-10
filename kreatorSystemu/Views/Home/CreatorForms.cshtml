@@ -1,0 +1,75 @@
+﻿@{
+    ViewBag.Title = "Kreator";
+}
+<h2>@ViewBag.Title</h2>
+<h3>@ViewBag.Message</h3>
+@{
+    var data = DateTime.Now;
+}
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<body>
+    <div class="jumbotron">
+        
+        <form class="form-horizontal" method="post">
+            <div class="form-group">
+                <label for="text" class="control-label col-xs-4">Hasło</label>
+                <div class="col-xs-8">
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <i class="fa fa-space-shuttle"></i>
+                        </div>
+                        <input id="text" name="text" type="text" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-xs-4" for="1">Chcę RCP?</label>
+                <div class="col-xs-8">
+                    <select id="1" name="1" class="select form-control">
+                        <option value="tak">wybierz z listy</option>
+                        <option value="tak">tak</option>
+                        <option value="nie">nie</option>
+                        <option value="nie wiem">nie wiem</option>
+                        <option value="wiem ale nie powiem">wiem, ale nie powiem ;)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-xs-4" for="2">Chcę KD?</label>
+                <div class="col-xs-8">
+                    <select id="1" name="2" class="select form-control">
+                        <option value="tak">wybierz z listy</option>
+                        <option value="tak">tak</option>
+                        <option value="nie">nie</option>
+                        <option value="nie wiem">nie wiem</option>
+                        <option value="wiem ale nie powiem">wiem, ale nie powiem ;)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-xs-4" for="3">Chcę zlecenia?</label>
+                <div class="col-xs-8">
+                    <select id="1" name="3" class="select form-control">
+                        <option value="tak">wybierz z listy</option>
+                        <option value="tak">tak</option>
+                        <option value="nie">nie</option>
+                        <option value="nie wiem">nie wiem</option>
+                        <option value="wiem ale nie powiem">wiem, ale nie powiem ;)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-xs-offset-4 col-xs-8">
+                    <button name="submit" type="submit" class="btn btn-primary">wyślij</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+</body>
