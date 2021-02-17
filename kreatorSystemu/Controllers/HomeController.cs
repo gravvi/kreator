@@ -39,6 +39,13 @@ namespace kreatorSystemu.Controllers
             ViewData["Message"] = "Strona kreatatora systemu";
             return View();
         }
+
+        public IActionResult Table()
+        {
+            ViewData["Message"] = "Wybrane pozycje";
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
